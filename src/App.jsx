@@ -22,8 +22,8 @@ function App() {
   }
 
   return (
-    <>
-    <main className='flex flex-wrap p-4'>
+    <div className='h-screen mx-[10vw] mt-[10vh]'>
+    <main className='flex flex-wrap p-4 '>
       {currentPosts.map((post) => (
         <Card key={post.id} id={post.id} title={post.title} body={post.body}/>
       ))}
@@ -40,7 +40,7 @@ function App() {
       ))}
 
     </footer>
-    </>
+    </div>
   )
 }
 
